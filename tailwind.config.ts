@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'earth-green': '#1e3f2a',
-        'recursion-blue': '#2c7da0',
-        'pragmatic-gray': '#4a4a4a',
-        'alert-orange': '#d14502',
+        'earth-green': '#4a7c5e',
+        'recursion-blue': '#5ba3d0',
+        'pragmatic-gray': '#9ca3af',
+        'alert-orange': '#f97316',
         'deep-void': '#0a0a0a',
-        'quantum-white': '#f8f8f8',
+        'quantum-white': '#ffffff',
+        'light-gray': '#e5e7eb',
+        'medium-gray': '#d1d5db',
       },
       fontFamily: {
         'mono': ['JetBrains Mono', 'monospace'],

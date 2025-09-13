@@ -36,9 +36,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <div className="recursive-border p-8 bg-deep-void/80 backdrop-blur">
-                <h3 className="text-xl font-semibold mb-4">What You Get:</h3>
-                <ul className="space-y-3 text-left font-mono text-sm">
+              <div className="recursive-border p-8 bg-deep-void/60 backdrop-blur">
+                <h3 className="text-xl font-semibold mb-4 text-light-gray">What You Get:</h3>
+                <ul className="space-y-3 text-left font-mono text-sm text-medium-gray">
                   <li className="flex items-start">
                     <span className="op-symbol mr-2">∋</span>
                     <span>Automatically generates and stores digital Waste Transfer Notes (WTNs)</span>
@@ -58,8 +58,8 @@ export default function Home() {
                 </ul>
                 
                 <div className="mt-6 pt-6 border-t border-pragmatic-gray/30">
-                  <h3 className="text-xl font-semibold mb-2">What I Ask:</h3>
-                  <p className="font-mono text-sm">
+                  <h3 className="text-xl font-semibold mb-2 text-light-gray">What I Ask:</h3>
+                  <p className="font-mono text-sm text-medium-gray">
                     You cover my £184 waste carrier registration fee + let me shadow your ops for 1 week.
                   </p>
                 </div>
@@ -90,10 +90,10 @@ export default function Home() {
               as="h2"
               className="text-3xl md:text-4xl font-bold text-alert-orange mb-4"
             />
-            <h3 className="text-2xl md:text-3xl font-semibold mb-8">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-light-gray">
               Paperwork Is Killing Your Profit
             </h3>
-            <ul className="space-y-4 text-lg">
+            <ul className="space-y-4 text-lg text-medium-gray">
               <li className="flex items-start">
                 <span className="text-alert-orange mr-3 text-2xl">×</span>
                 <span>Manual WTNs are tedious, error-prone, and a compliance risk.</span>
@@ -148,10 +148,10 @@ export default function Home() {
               as="h2"
               className="text-3xl md:text-4xl font-bold text-earth-green mb-4"
             />
-            <h3 className="text-2xl md:text-3xl font-semibold mb-8">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-light-gray">
               AI-Powered Efficiency
             </h3>
-            <ul className="space-y-4 text-lg">
+            <ul className="space-y-4 text-lg text-medium-gray">
               <li className="flex items-start">
                 <span className="op-symbol mr-3">∋</span>
                 <span>A simple web app your drivers use on their phones.</span>
@@ -188,11 +188,11 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <motion.div 
-            className="recursive-border p-6 bg-deep-void/80"
+            className="recursive-border p-6 bg-deep-void/50"
             whileHover={{ y: -5 }}
           >
             <h4 className="text-xl font-bold mb-4 text-earth-green">You Get:</h4>
-            <ul className="space-y-2 font-mono text-sm">
+            <ul className="space-y-2 font-mono text-sm text-light-gray">
               <li>• Tool that saves hours weekly</li>
               <li>• Cuts fuel costs</li>
               <li>• Reduces audit risk</li>
@@ -201,11 +201,11 @@ export default function Home() {
           </motion.div>
 
           <motion.div 
-            className="recursive-border p-6 bg-deep-void/80"
+            className="recursive-border p-6 bg-deep-void/50"
             whileHover={{ y: -5 }}
           >
             <h4 className="text-xl font-bold mb-4 text-recursion-blue">I Get:</h4>
-            <ul className="space-y-2 font-mono text-sm">
+            <ul className="space-y-2 font-mono text-sm text-light-gray">
               <li>• £184 certification covered</li>
               <li>• Real-world ops knowledge</li>
               <li>• Testing ground for tool</li>
@@ -214,11 +214,11 @@ export default function Home() {
           </motion.div>
 
           <motion.div 
-            className="recursive-border p-6 bg-deep-void/80"
+            className="recursive-border p-6 bg-deep-void/50"
             whileHover={{ y: -5 }}
           >
             <h4 className="text-xl font-bold mb-4 text-alert-orange">Result:</h4>
-            <ul className="space-y-2 font-mono text-sm">
+            <ul className="space-y-2 font-mono text-sm text-light-gray">
               <li>• One-time exchange</li>
               <li>• Mutual benefit</li>
               <li>• No ongoing fees</li>
@@ -236,7 +236,7 @@ export default function Home() {
             as="h2"
             className="text-3xl md:text-4xl font-bold mb-8"
           />
-          <div className="space-y-6 text-lg">
+          <div className="space-y-6 text-lg text-light-gray">
             <p>
               I build AI automation for complex logistics—this isn't theory.
             </p>
@@ -260,7 +260,7 @@ export default function Home() {
               as="h2"
               className="text-3xl md:text-4xl font-bold mb-4"
             />
-            <p className="text-xl text-pragmatic-gray">
+            <p className="text-xl text-light-gray">
               Stop Doing Paperwork.
             </p>
           </div>
@@ -269,13 +269,13 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="recursive-border p-8 bg-deep-void/90 backdrop-blur"
+            className="recursive-border p-8 bg-deep-void/50 backdrop-blur"
           >
             <ContactForm />
           </motion.div>
 
           <motion.div 
-            className="mt-8 text-center font-mono text-sm text-pragmatic-gray"
+            className="mt-8 text-center font-mono text-sm text-light-gray"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
