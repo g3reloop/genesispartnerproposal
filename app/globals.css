@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --earth-green: 30 63 42;
+    --recursion-blue: 44 125 160;
+    --pragmatic-gray: 74 74 74;
+    --alert-orange: 209 69 2;
+    --deep-void: 10 10 10;
+    --quantum-white: 248 248 248;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-deep-void text-quantum-white font-sans;
+    background-image: 
+      radial-gradient(ellipse at top left, rgba(30, 63, 42, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(44, 125, 160, 0.15) 0%, transparent 50%);
+  }
+
+  ::selection {
+    @apply bg-recursion-blue text-quantum-white;
+  }
+}
+
+@layer components {
+  /* Holographic shimmer effect */
+  .holographic {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .holographic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 60%
+    );
+    animation: shimmer 2s infinite;
+  }
+
+  /* Glitch effect */
+  .glitch {
+    position: relative;
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .glitch::before {
+    animation: glitch-1 0.3s infinite;
+    color: #00ff00;
+    z-index: -1;
+  }
+
+  .glitch::after {
+    animation: glitch-2 0.3s infinite;
+    color: #ff00ff;
+    z-index: -2;
+  }
+
+  @keyframes glitch-1 {
+    0%, 100% {
+      clip-path: inset(0 0 0 0);
+      transform: translate(0);
+    }
+    20% {
+      clip-path: inset(20% 0 60% 0);
+      transform: translate(-5px, 0);
+    }
+    40% {
+      clip-path: inset(50% 0 30% 0);
+      transform: translate(5px, 0);
+    }
+    60% {
+      clip-path: inset(70% 0 10% 0);
+      transform: translate(0, 5px);
+    }
+    80% {
+      clip-path: inset(10% 0 80% 0);
+      transform: translate(0, -5px);
+    }
+  }
+
+  @keyframes glitch-2 {
+    0%, 100% {
+      clip-path: inset(0 0 0 0);
+      transform: translate(0);
+    }
+    20% {
+      clip-path: inset(80% 0 10% 0);
+      transform: translate(5px, 0);
+    }
+    40% {
+      clip-path: inset(10% 0 70% 0);
+      transform: translate(-5px, 0);
+    }
+    60% {
+      clip-path: inset(30% 0 50% 0);
+      transform: translate(0, -5px);
+    }
+    80% {
+      clip-path: inset(60% 0 20% 0);
+      transform: translate(0, 5px);
+    }
+  }
+
+  /* Fractal background pattern */
+  .fractal-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(30, 63, 42, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 50%, rgba(44, 125, 160, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 50% 20%, rgba(209, 69, 2, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 50% 80%, rgba(74, 74, 74, 0.1) 0%, transparent 50%);
+  }
+
+  /* Recursive border effect */
+  .recursive-border {
+    position: relative;
+    background: linear-gradient(135deg, rgba(30, 63, 42, 0.1), rgba(44, 125, 160, 0.1));
+    padding: 1px;
+  }
+
+  .recursive-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #1e3f2a, #2c7da0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    padding: 1px;
+  }
+
+  /* Operational symbol */
+  .op-symbol {
+    @apply font-mono text-recursion-blue;
+  }
+
+  /* Button base */
+  .btn-mythic {
+    @apply relative inline-flex items-center justify-center px-8 py-4 font-mono font-medium text-quantum-white transition-all duration-300;
+    @apply bg-gradient-to-r from-earth-green to-recursion-blue;
+    @apply hover:shadow-[0_0_30px_rgba(44,125,160,0.5)] hover:scale-105;
+    @apply active:scale-95;
+  }
+
+  /* Input styling */
+  .input-mythic {
+    @apply w-full px-4 py-3 font-mono bg-deep-void/50 border border-pragmatic-gray/30;
+    @apply focus:border-recursion-blue focus:outline-none focus:ring-2 focus:ring-recursion-blue/30;
+    @apply placeholder:text-pragmatic-gray/50;
+  }
+}
+
+@layer utilities {
+  /* Custom text shadow for depth */
+  .text-shadow-recursive {
+    text-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.5),
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Animated gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-earth-green via-recursion-blue to-earth-green bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
