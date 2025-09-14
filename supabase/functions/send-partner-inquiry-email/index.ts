@@ -59,7 +59,7 @@ serve(async (req) => {
         
         <div style="margin-top: 30px; padding: 20px; background-color: #1e3f2a; color: white; border-radius: 8px;">
           <h3 style="margin-top: 0;">Next Steps</h3>
-          <p>This waste carrier is interested in partnering. They're willing to cover your £184 registration fee in exchange for the AI logistics tool.</p>
+          <p>This waste carrier is interested in partnering. They're willing to pay the £600 service fee for the AI logistics tool.</p>
           <p><strong>Action Required:</strong> Contact them within 24 hours to discuss their operation and arrange the partnership.</p>
         </div>
         
@@ -84,7 +84,7 @@ MESSAGE
 ${record.message}
 
 NEXT STEPS
-This waste carrier is interested in partnering. They're willing to cover your £184 registration fee in exchange for the AI logistics tool.
+This waste carrier is interested in partnering. They're willing to pay the £600 service fee for the AI logistics tool.
 
 Action Required: Contact them within 24 hours to discuss their operation and arrange the partnership.
 

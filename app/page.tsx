@@ -60,7 +60,10 @@ export default function Home() {
                 <div className="mt-6 pt-6 border-t border-pragmatic-gray/30">
                   <h3 className="text-xl font-semibold mb-2 text-light-gray">What I Ask:</h3>
                   <p className="font-mono text-sm text-medium-gray">
-                    You cover my £184 waste carrier registration fee + let me shadow your ops for 1 week.
+                    £600 service fee + let me shadow your ops for 1 week.
+                  </p>
+                  <p className="font-mono text-xs text-medium-gray/70 mt-2">
+                    (Includes £184 waste carrier registration)
                   </p>
                 </div>
               </div>
@@ -206,7 +209,7 @@ export default function Home() {
           >
             <h4 className="text-xl font-bold mb-4 text-recursion-blue">I Get:</h4>
             <ul className="space-y-2 font-mono text-sm text-light-gray">
-              <li>• £184 certification covered</li>
+              <li>• £600 service fee</li>
               <li>• Real-world ops knowledge</li>
               <li>• Testing ground for tool</li>
               <li>• Partnership validation</li>
@@ -219,7 +222,7 @@ export default function Home() {
           >
             <h4 className="text-xl font-bold mb-4 text-alert-orange">Result:</h4>
             <ul className="space-y-2 font-mono text-sm text-light-gray">
-              <li>• One-time exchange</li>
+              <li>• One-time £600 investment</li>
               <li>• Mutual benefit</li>
               <li>• No ongoing fees</li>
               <li>• Pure efficiency gain</li>
